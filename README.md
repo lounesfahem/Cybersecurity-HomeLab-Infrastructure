@@ -1,8 +1,8 @@
-🛡️ Cybersecurity HomeLab - Infrastructure Multi-Zone
+Cybersecurity HomeLab - Infrastructure Multi-Zone
 
 Ce dépôt documente la conception, le déploiement et la sécurisation de mon laboratoire personnel de cybersécurité. L'objectif est de simuler un environnement d'entreprise pour tester des stratégies de défense, de détection et de durcissement (hardening).
 
-🏗️ Architecture Réseau (3-Tier)
+Architecture Réseau (3-Tier)
 
 L'infrastructure est segmentée en trois zones distinctes via un pare-feu pfSense virtualisé :
 
@@ -12,7 +12,7 @@ LAN_CORP (10.0.1.0/24) : Zone de confiance hébergeant l'Active Directory et les
 
 DMZ_WEB (10.0.2.0/24) : Zone exposée hébergeant les services applicatifs (Nextcloud, serveurs Web).
 
-🛠️ Stack Technique
+Stack Technique
 
 Hyperviseur : VirtualBox / VMware (Hôte : Ryzen 5 5600X, 32GB RAM).
 
@@ -24,7 +24,7 @@ Systèmes : Windows Server 2022 (AD en cours), Debian 12 (Hardened).
 
 Filtrage DNS : Pi-hole (DNS Sinkhole) physique intégré via pfSense.
 
-🔒 Implémentations de Sécurité
+Implémentations de Sécurité
 
 1. Segmentation & Zero Trust
 
@@ -48,11 +48,11 @@ Accès Applicatifs : Flux restreints via des Aliases de ports spécifiques (ex: 
 
 Historique de Déploiement (Changelog)
 
-Étape 1 : Architecture réseau et déploiement du pare-feu pfSense. ✅
+Étape 1 : Architecture réseau et déploiement du pare-feu pfSense. 
 
-Étape 2 : Segmentation LAN/DMZ et configuration des règles de filtrage initiales. ✅
+Étape 2 : Segmentation LAN/DMZ et configuration des règles de filtrage initiales. 
 
-Étape 3 : (En cours) Installation de l'Active Directory, configuration DNS Forwarding et GPO de durcissement. 🔄
+Étape 3 : (En cours) Installation de l'Active Directory, configuration DNS Forwarding et GPO de durcissement. 
 
 Structure du Dépôt
 
